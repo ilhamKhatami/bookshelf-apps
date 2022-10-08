@@ -23,6 +23,7 @@
 body {
     font-family: Helvetica, sans-serif;
     font-size: 16px;
+    background-color: rgb(204, 204, 204);
 }
 
 main {
@@ -52,10 +53,6 @@ p {
 
 a {
     text-decoration: none;
-}
-
-button:hover {
-    opacity: 60%;
 }
 
 label {
@@ -134,6 +131,10 @@ footer {
     width: 100%;
     color: var(--color-text);
     background-color: var(--color-primary);
+}
+
+.nav-menu button:hover {
+    opacity: 60%;
 }
 
 .nav-menu button, .menu-title {
@@ -300,7 +301,8 @@ input[type=submit] {
 .mark {
     position: relative;
     top: -15px;
-    padding: 10px 6px 5px;
+    right: 18px;
+    padding: 15px 6px 7px;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     color: var(--color-text);

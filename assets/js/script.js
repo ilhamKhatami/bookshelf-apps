@@ -108,7 +108,8 @@ document.addEventListener('DOMContentLoaded', () => {
             innerHTML: 'Cari : <input type="text" id="inputCari"><button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>'
         })
 
-        container.addEventListener('submit', () => {
+        container.addEventListener('submit', Event => {
+            Event.preventDefault();
             const target = document.getElementById('inputCari').value;
             searchBook(target);
         })
