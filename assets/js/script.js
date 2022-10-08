@@ -167,8 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         container.append(title, labelJudul, inputJudul, labelPenulis, inputPenulis, labelTahun, inputTahun, inputSelesai, inputSubmit);
 
-        container.addEventListener('submit', event => {
-            // event.preventDefault();
+        container.addEventListener('submit', () => {
             addBook();
             
         })
