@@ -54,7 +54,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+button:hover {
     opacity: 60%;
 }
 
@@ -127,15 +127,16 @@ footer {
     flex-direction: column;
 }
 
-.nav-menu a {
+.nav-menu button {
     display: block;
     text-align: left;
+    border: unset;
     width: 100%;
     color: var(--color-text);
     background-color: var(--color-primary);
 }
 
-.nav-menu a, .menu-title {
+.nav-menu button, .menu-title {
     padding: 10px;
     font-size: 1.1em;
 }

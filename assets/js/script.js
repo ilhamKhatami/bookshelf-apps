@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         container.addEventListener('submit', () => {
             addBook();
-            
+            window.location.reload();
         })
         return container;
     }
