@@ -1,0 +1,307 @@
+/**
+ * VARIABLES
+ */
+:root {
+    --color-primary: #16213E;
+    --color-secondary: #28364e;
+    --color-bg: #fff;
+    --color-fg: #eeeeeeea;
+    --color-danger: #ff0000;
+    --color-text: #fff;
+}
+
+
+/**
+ * GLOBAL ELEMENTS STYLES
+ */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    flex-basis: 25%;
+    background-color: var(--color-fg);
+}
+
+h2 {
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+hr {
+    margin: 5px 0 0;
+}
+
+p {
+    margin: 3px 0 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 60%;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input {
+    padding: 5px;
+    border: unset;
+}
+
+input:focus {
+    outline: none;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    color: var(--color-text);
+    background-color: var(--color-primary);
+}
+
+
+/**
+ * GLOBAL CLASS COMPONENT
+ */
+.card {
+    background-color: var(--color-fg);
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.301) 2.9px 2.9px 5.9px;
+}
+
+
+/**
+ * WRAP COMPONENT
+ */
+.wrapper {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+
+/**
+ * HEADER COMPONENT
+ */
+.jumbotron {
+    padding: 50px;
+    text-align: center;
+    color: var(--color-text);
+    background-color: var(--color-primary);
+}
+
+.nav-header {
+    text-align: left;
+    padding: 10px;
+    background-color: var(--color-fg);
+}
+
+.nav-header button {
+    border: unset;
+}
+
+
+/**
+ * SIDEBAR COMPONENT
+ */
+.nav-menu ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-menu a {
+    display: block;
+    text-align: left;
+    width: 100%;
+    color: var(--color-text);
+    background-color: var(--color-primary);
+}
+
+.nav-menu a, .menu-title {
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+.menu-title {
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+
+/**
+ * CONTENT COMPONENT
+ */
+.content {
+    flex-basis: 75%;
+    min-height: 340px;
+    color: var(--color-primary);
+    background-color: var(--color-bg);
+}
+
+.content-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 0;
+}
+
+.content-title {
+    padding: 10px;
+}
+
+.content-title hr {
+    margin-top: 10px;
+}
+
+
+/**
+ * SEARCH COMPONENT
+ */
+.search-box {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.search-box label {
+    margin: 0;
+}
+
+.search-box input {
+    height: 100%;
+    border: 1px solid var(--color-primary);
+}
+
+.search-box button {
+    border: unset;
+    padding: 10px;
+    color: var(--color-text);
+    background-color: var(--color-primary);
+}
+
+
+/**
+ * BERANDA COMPONENT
+ */
+ .welcome-section {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.welcome-section * {
+    margin: 10px 0;
+}
+
+
+/**
+ * FORM TAMBAH BUKU COMPONENT
+ */
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: 0 auto 20px;
+    max-width: 400px;
+}
+
+label:last-of-type {
+    padding: 5px 0 10px;
+}
+
+.form input:focus {
+    outline: 1px solid var(--color-primary);
+}
+
+input[type=checkbox] {
+    margin-right: 5px;
+}
+
+input[type=submit] {
+    border-width: 0px;
+    color: var(--color-text);
+    background-color: var(--color-secondary);
+}
+
+
+/**
+ * DAFTAR BUKU COMPONENT
+ */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 12px 15px;
+}
+
+.box {
+    flex: 0 0 48%;
+    min-width: 260px;
+    padding: 15px;
+    color: var(--color-primary);
+}
+
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-box {
+    flex-grow: 1;
+}
+
+.action-box button {
+    margin: 3px;
+    padding: 5px;
+    width: 26px;
+    border-radius: 6px;
+}
+
+.action-box button:hover {
+    color: var(--color-text);
+}
+
+.succes {
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary)
+}
+
+.succes:hover {
+    background-color: var(--color-primary);
+}
+
+.danger {
+    color: var(--color-danger);
+    border: 1px solid var(--color-danger)
+}
+
+.danger:hover {
+    background-color: var(--color-danger);
+}
+
+.mark {
+    position: relative;
+    top: -15px;
+    padding: 10px 6px 5px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    color: var(--color-text);
+    background-color: var(--color-primary);
+}
